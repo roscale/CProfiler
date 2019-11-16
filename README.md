@@ -2,7 +2,7 @@
 ### Ported from TheCherno's gist:
 https://gist.github.com/TheCherno/31f135eea6ee729ab5f26a6908eb3a5e
 
-##Usage
+## Usage
 1. Copy the `instrumentor.h` and `instrumentor.c` files to your project.
 2. Write `PROFILE_FUNCTION();` at the beginning of every function you want to profile.
 3. In the `main()` function write `begin_profiling_session("results.json");` to start a profiling session.
@@ -11,7 +11,7 @@ https://gist.github.com/TheCherno/31f135eea6ee729ab5f26a6908eb3a5e
 6. Open a Chromium based browser (Google Chrome, Opera etc.) and navigate to `chrome://tracing`.
 7. Click the load button and open the generated json file. You can also do drag and drop.
 
-##Example
+## Example
 ```C
 #include <unistd.h>
 #include "instrumentor.h"
