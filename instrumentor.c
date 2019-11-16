@@ -16,12 +16,10 @@
 
 void write_header(Instrumentor *instr) {
 	fputs("{\"otherData\": {},\"traceEvents\":[", instr->output);
-	fflush(instr->output);
 }
 
 void write_footer(Instrumentor *instr) {
 	fputs("]}", instr->output);
-	fflush(instr->output);
 }
 
 void write_profile(Instrumentor *instr, const ProfileResult result) {
@@ -42,8 +40,6 @@ void write_profile(Instrumentor *instr, const ProfileResult result) {
 	fprintf(instr->output, "\"ts\":%li",
 	        1000000 * result.start.tv_sec + result.start.tv_usec);
 	fputs("}", instr->output);
-
-	fflush(instr->output);
 }
 
 Instrumentor *get_instrumentor() {

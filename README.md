@@ -46,3 +46,6 @@ int main() {
 	return 0;
 }
 ```
+
+### Result
+![Example image](example-image.png)
