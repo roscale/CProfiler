@@ -16,13 +16,13 @@ https://gist.github.com/TheCherno/31f135eea6ee729ab5f26a6908eb3a5e
 #include <unistd.h>
 #include "instrumentor.h"
 
-void just_wait() {
+static void just_wait() {
 	PROFILE_FUNCTION();
 
 	sleep(1);
 }
 
-int sum(size_t n) {
+static int sum(size_t n) {
 	PROFILE_FUNCTION();
 
 	int s = 0;

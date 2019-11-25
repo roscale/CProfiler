@@ -1,13 +1,13 @@
 #include <unistd.h>
 #include "instrumentor.h"
 
-void just_wait() {
+static void just_wait() {
 	PROFILE_FUNCTION();
 
 	sleep(1);
 }
 
-int sum(size_t n) {
+static int sum(size_t n) {
 	PROFILE_FUNCTION();
 
 	int s = 0;

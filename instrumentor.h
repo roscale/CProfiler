@@ -21,7 +21,7 @@ typedef struct {
 
 void begin_profiling_session(const char *filename);
 
-void end_profiling_session();
+void end_profiling_session(void);
 
 InstrumentationTimer new_instrumentation_timer(const char *name);
 
